@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gruping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+                  margin: 0px;
+                  }
+                    header {
+                        widht: 600px;
+                        background-color: blanchedalmond;
+                        padding: 10px;
+                        margin: 10px;
+                                            }
+                  nav {
+                    background-color: rgb(147, 105, 54);
+                    padding: 3px;
+                    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.323);
+                                      }  
+                   nav > a {
+                    text-decoration: none;
+                    color: antiquewhite;
+                    font-weight: bold;
+                   margin-right: 30px;
+                   } 
+                   nav > a:hover {
+                    text-decoration: underline;
+                   }
+
+                                            article {
+                                                background-color: bisque;
+                                           padding: 5px; }
+            article>aside {
+                background-color: beige;
+            }                              
+            main {
+                background-color: antiquewhite;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 10px 30px ;
+              box-shadow: 10px 10px 10px black;
+            }                
+            footer {
+                background-color: black;
+                color: aliceblue;
+                text-align: center;
+                padding: 1px;
+                margin: 0px;
+            } 
+            footer > p{
+                margin: 0px;
+                box-shadow: 10px 10px 10px black;
+            }  
+            div#bola {
+                height: 100px;
+                width: 100px;
+                margin: 10px;
+                background-color: aliceblue;
+                border-radius: 50%;
+            }             
+    </style>
+</head>
+<body>
+    <header>
+<h1>meu site</h1>
+<nav>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+</nav>
+    </header>
+    <main>
+<section id="assuntos">
+</section>
+<section id="noticias">
+ <article>
+    <h2>este é um subtitulo dentro de um artigo</h2>
+    <p>este é o assunto do subtitulo</p>
+    <aside>
+        <p>escrito e apanhando por min</p>
+    </aside>
+ </article>   
+</section>
+    </main>
+    <footer>
+<p>to treinando pra caramba</p>
+  
+</footer>
+<div id=bola ></div> 
+
+</body>
+</html>

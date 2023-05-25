@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,400 & display=swap');
+@font-face {
+    font-family: 'pirata';
+    src: url(fontes/Winter\ Danced\ Font\ by\ 7NTypes.otf)format('opentype');
+}
+
+:root {
+    --cor0:  #E39505 ;
+    --cor1: #FA8F12 ;
+    --cor2:  #E35B05;
+    --cor3:  #05e3c2;
+    --fonte-padrao:'pirata', 'cursiva';
+   
+   
+}
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+p{
+    margin: 0px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1em;
+}
+body {
+ background-color: #05e3c2;
+ font-family: var(--fonte-padrao);
+}
+a.externo::after {
+    content: '\1F517';
+}
+header {
+    background-color: var(--cor2);
+    padding-bottom: 0px ;
+}
+header > h1 {
+    color:rgb(16, 49, 196);
+    
+   text-align: center;
+ font-size:100px;
+ border-radius: 0px 15px;
+ padding: 0px;
+}
+header > p {
+    font-size: 30px;
+    text-align: center;
+}
+nav {
+    background-color: var(--cor1);
+    margin-top: 0px;
+    padding: 10px;
+   font-size: 20px;
+}
+nav > a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+main {
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    color: rgb(17, 44, 222);
+    background-color: rgb(46, 194, 98);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90% ;
+    height: ;
+}
+div.video {
+    background-color: #054fe3;
+   padding: 20px;
+    margin: 0px -20px 30px -20px;
+    position: relative;
+    padding-bottom: 50%;
+}
+main {
+    background-color: blanchedalmond;
+    padding: 20px;
+    border-radius: 10px;
+   min-width: 320px;
+   max-width: 800px;
+    margin: auto;
+}
+img
+{
+    width: 100%;
+}
+main h1 {
+  color: var(--cor2);
+    font-family: var(--fonte-titulo);
+     
+}
+main h2 {
+    font-family: var(--fonte-titulo);
+   color: var(--cor1);
+   font-size: 2em;
+background-image: linear-gradient(to right, #05e3c2, transparent) ;
+}
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1em;
+    line-height: 2em;
+
+
+}
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+}
+main a {
+    text-decoration: none;
+font-weight: bold;
+color: var(--cor3);
+background-color: aliceblue;
+}
+main a  :hover {
+    text-decoration: underline;
+    color: aquamarine;
+}
+main img.pq {
+width: 50%;
+display: block;
+}
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(0, 0, 0);
+}
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\1F480';
+}
+aside > h3 {
+    background-color: rgb(92, 92, 222) ;
+    color: aliceblue;
+    padding: 15px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+footer {
+    background-color: var(--cor2);
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8em;
+    color: aliceblue;
+}
+footer a {
+    text-decoration: underline;
+    color: rgb(40, 40, 221);
+} 
