@@ -1,5 +1,12 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2? family= Pacifico & family= Raleway:ital,wght@0,200;0,300;1,100;1,200;1,400 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Satisfy & display=swap');
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sams-serif;
+    --fonte2: 'Pacifico', cursive;    
+    --fonte3: 'Satisfy', cursive;
+   
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -7,15 +14,18 @@
     html, body {
         min-height: 100vh;
         background-color:rgb(252, 225, 149) ;
+        font-family: var(--fonte3)
     }
     header {
         background-color:  black;
         color: aliceblue;
         text-align: center;
     }
-    header {
+    header > h1 {
         padding-top: 50px;
         font-variant: small-caps;
+        font-family: var(--fonte2);
+        font-size: 10vw;
     }
     header > p {
         padding-bottom: 50px;
@@ -33,6 +43,7 @@
                 padding-bottom: 10vh;
                 line-height: 2em;
                 padding-left: 30px;
+                font-size: 3.5vw;
             }
             section.normal {
                 background-color: aliceblue;
@@ -41,10 +52,26 @@
             section.imagem {
                 background-color: rgba(0, 0, 0, 0.842);
                 color: aliceblue;
+                box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.652);
+               background-attachment: fixed;
+            }
+            section > p {
+             padding-bottom: 2em;
             }
             section.imagem > p {
-                width: 200px;
+                display: inline-block;
+                width:500px;
                 background-color: rgba(0, 0, 0, 0.34);
+            }
+            section#img1 {
+                background-image: url('../imagens/imagem1.jpg');
+                text-shadow: 1px 1px 0px black;
+                background-size: cover;
+            }
+            section#img2 {
+                background-image:  url('../imagens/imagem2.jpg');
+                text-shadow: 1px 1px 0px black;
+                background-size: cover;
             }
             footer {
                 background-color: black;
