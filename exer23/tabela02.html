@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        caption {
+            font-size: 1.5 em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(0, 166, 255);
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width:600px;
+            border-collapse: collapse;
+            position: relative;
+
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead {
+            background-color: gray;
+            color: aliceblue;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray ;
+
+        }
+       td.total {
+        background-color: aqua;
+        
+       }
+       
+       tbody > tr:nth-child(2n) 
+       {
+        background-color: aquamarine;
+       }
+       
+    </style>
+</head>
+<body>
+    
+    <h1>uso de tabelas grandes</h1>
+    <!--
+        caption = legenda da tabela
+        anatomia para tabelas grandes
+        table
+        thead
+           TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH 
+
+            th= titulo
+            td= dado   
+            col = msm coluna
+            row= msm linha
+             tbody > tr:nth-child comando para efeito zebrado
+    -->
+    <table>
+        <caption>populacão brasileira por regioes</caption>
+        <thead>
+            <tr>
+                <th scope="col">estado</th>
+                <th scope="col">população</th>
+                <th scope="col">municipios</th>
+                <th scope="col">população (2022)</th>
+                <th scope="col">%</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+                <tr>
+                    <th scope="row">norte</th>
+                    
+                    <td><li>acre</li>
+                    <li>amapa</li>
+                    <li>amazonas</li>
+                    <li>pará</li>
+                    <li>rondonia</li>
+                    <li>roraima</li>
+                    <li>tocantins</li></td>
+                    <td>450</td>
+                    <td>17 834 762</td>
+                    <td>9%</td>
+                </tr>
+                <tr>
+                    <th scope="row">nordeste</th>
+                    <td><li>bahia</li>
+                    <li>ceara</li>
+                    <li>alagoas</li>
+                    <li>maranhão</li>
+                    <li>paraiba</li>
+                    <li>pernambuco</li>
+                    <li>piaui</li>
+                    <li>RG Norte</li>
+                    <li>sergipe</li>
+                    </td>
+                    <td>1793</td>
+                    <td>55 389 382</td>
+                    <td>27%</td>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">centro-oeste</th>
+                    <td><li>distrito federal</li>
+                    <li>goias</li>
+                    <li>mato grosso</li>
+                    <li>mato grosso do sul</li>
+                    </td>
+                    <td>467</td>
+                    <td>16 492 326</td>
+                    <td>8%</td>
+                </tr>
+                <tr>
+                    <th scope="ro
+                    ">sudeste</th>
+                    <td><li>espirito santo</li>
+                        <li>minas gerais</li>
+                        <li>rio de janeiro</li>
+                        <li>são paulo</li>
+                        <td>1668</td>
+                        <td>87 348 223</td>
+                        <td>42%</td>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">sul</th>
+                    <td><li>parana</li>
+                        <li>santa catarina</li>
+                        <li>RG SUL</li>
+                    </td>
+                    <td>1191</td>
+                    <td>30 685 598</td>
+                    <td>14%</td>
+                </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">total de habitantes</th>
+                <td>26 e 1 df</td>
+                <td>5570</td>
+                <td class="total" colspan="2" >207 750 291</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
